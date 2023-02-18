@@ -1,0 +1,19 @@
+header {
+    text-align: center;
+    font-family: 'Dosis', sans-serif;
+}
+.nombre {
+    line-height: 0%;
+}
+main {
+    font-family: 'Dosis', sans-serif;
+}
+ol li::marker {
+    color: #0e6fc9;
+}
+.uno li::marker {
+    color: #6dd64d;
+}
+.dos li::marker {
+    color: #D2228C;
+}
