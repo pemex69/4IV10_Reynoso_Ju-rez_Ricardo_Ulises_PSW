@@ -1,0 +1,35 @@
+.container {
+    width: 100%;
+    height: 100%;
+    background-color: #f1f1f1;
+    padding: 20px;
+    border-radius: 5px;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+    max-width: 500px;
+    font-family: 'Roboto', sans-serif;
+}
+.container-formulario {
+    width: 100%;
+    height: 100%;
+    background-color: #f1f1f1;
+    padding: 20px;
+    border-radius: 5px;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+    max-width: 500px;
+    font-family: 'Roboto', sans-serif;
+}
+body {
+    background-color: #f1f1f1;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #666;
+    margin: 0;
+    padding: 0;
+}

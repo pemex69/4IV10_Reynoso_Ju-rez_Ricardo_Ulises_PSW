@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Registro</title>
+    <link rel="stylesheet" href="./formulario style sheet.css">
+    <script src="../03_Registro/validaciones form.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>Formulario de Registro</h1>
+        <p>Deberan de realizar la validacion del formulario en el campo fecha, asi mismo agregar una css kawaii asi
+            linda, y agregar un elemento de input extra como checkbox, radio, color, etc</p>
+        <br>
+    </header>
+    <p>Había una vez un patito que decia miau miau (era bilingue), y este patito queria
+        aprender a utilizar diferentes tipos de formularios.
+        <br>
+        Existen dos metodos principales para la obtención de los
+        datos dentro de un formulario web, para lo cual aqui lo explicaremos:
+    </p>
+    <br>
+    <h1>GET: </h1>
+    Éste metodo es el estandar como salida de navegador
+    mediante el cual se resuelve una petición por parte del cliente,
+    así mismo en la salida estandar (url), se puede visualizar los datos
+    enviados mediante el form . . .
+    <br>
+    <h1>POST: </h1>
+    Éste metodo es el mas utilzado para el envio de información desde un form
+    atendiendo una petición por parte del
+    cliente, actuando para poder agregar o insertar.
+    <br>
+    <div class="container">
+        <div class="container-formulario">
+            <form class="form" name="form" method="get" onsubmit=" validar(this);">
+                <br>
+                <label for="">Nombre: </label>
+                <br>
+                <input type="text" name="nombre" id="nombre">
+                <br>
+                <label>Edad: </label>
+                <br>
+                <input type="number" name="edad" id="edad" min="01" max="130">
+                <br>
+                <label>Fecha de nacimiento: </label>
+                <br>
+                <input type="date" name="fecha" id="fecha">
+                <br>
+                <label>email: </label>
+                <br>
+                <input type="email" name="correo" id="correo">
+                <br>
+                <label>¿Tienes mascota?</label>
+                <br>
+                <input type="checkbox" name="mascota" id="mascota" value="si">Si
+                <input type="checkbox" name="mascota" id="mascota" value="no">No
+                <br>
+                <input type="submit" name="enviar" value="Enviar datos del registro">
+                <input type="reset" name="borrar" value="Borrar datos . . .">
+            </form>
+        </div>
+    </div>
+    <center>
+        <a href="../index.html">Regresar . . .</a>
+    </center>
+</body>
+
+</html>
