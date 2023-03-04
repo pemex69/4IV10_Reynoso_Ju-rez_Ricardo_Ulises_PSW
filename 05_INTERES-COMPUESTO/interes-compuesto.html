@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarea de interés compuesto</title>
+    <script src="./interes-compuesto js.js"></script>
+    <link rel="stylesheet" href="./interes-compuesto style sheet.css">
+</head>
+
+<body>
+    <header>
+        <h1>Interés Compuesto</h1>
+        <p>En este ejercicio se calculará el interés compuesto (resultado en decimal) de un capital inicial (en
+            decimal), un interés anual %(en decimal) y un número de
+            años (entero). <span class="spanmini">para algo de la playa¿??</span></p>
+        <br>
+    </header>
+    <body>
+        <div class="container">
+            <div class="container-form">
+                <form class="form" name="form" method="get">
+                    <br>
+                    <label for="">Prestamo: <span class="spanmini">Hasta 1000000000*</span></label>
+                    <br>
+                    <input type="number" name="capital" id="capital" placeholder="Ingresa el capital inicial"
+                        onpaste="return false">
+                    <br>
+                    <label>Con un pocentaje anual del: <span class="spanmini">Hasta 1000*</span></label>
+                    <br>
+                    <!--Tiene un valor default de 96-->
+                    <input value="96" type="number" name="interes" id="interes" min="01" max="130"
+                        placeholder="Ingresa el interés anual" onpaste="return false">
+                    <br>
+                    <label>A un plazo de: <span class="spanmini">Hasta 100*</span></label>
+                    <br>
+                    <input type="number" name="años" id="años" placeholder="Ingresa el numero de años"
+                        onpaste="return false">
+                    <br>
+                    <br>
+                    <label for="">Resultado:</label>
+                    <input type="text" name="ans" id="ans" placeholder="Esperando datos . . ." onpaste="return false">
+                    <br>
+                    <br>
+                    <center>
+                        <button onclick="return calcularInteresCompuesto()">Calcular</button>
+                        <br>
+                        <br>
+                        <button type="reset" value="Reset">Borrar valores</button>
+                    </center>
+                    <br>
+                </form>
+            </div>
+
+            <div class="container-tabla">
+                <table class="tabla">
+                    <thead>
+                        <tr>
+                            <th>Periodo</th>
+                            <th>Inversion</th>
+                            <th>Intereses</th>
+                            <th>Capital de abono</th>
+                            <th>Cuota</th>
+                            <th>Saldo final</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <!--Sin pre no hay indentados ni saltos de línea-->
+                            <td>
+                                <pre id="periodo"></pre>
+                            </td>
+                            <td>
+                                <pre id="inversiones"></pre>
+                            </td>
+                            <td>
+                                <pre id="intereses"></pre>
+                            </td>
+                            <td>
+                                <pre id="perro"></pre>
+                            </td>
+                            <td>
+                                <pre id="cuota"></pre>
+                            </td>
+                            <td>
+                                <pre id="final"></pre>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><strong>TOTALES</strong></td>
+                            <td></td>
+                            <td>
+                                <pre id="totalInteres"></pre>
+                            </td>
+                            <td>
+                                <pre id="totalPago"></pre>
+                            </td>
+                            <td>
+                                <pre id="totalCuota"></pre>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+    </body>
+    <footer>
+        <center>
+            <h3><a href="../index.html">Atrás</a></h3>
+        </center>
+    </footer>
+</body>
+</html>
