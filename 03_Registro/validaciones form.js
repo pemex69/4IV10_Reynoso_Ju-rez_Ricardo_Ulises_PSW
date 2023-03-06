@@ -10,7 +10,7 @@ function validar(form) {
                 Letras = true;
             }
         }
-        if (Letras == false) {
+        if (!Letras) {
             break;
         }
     }
